@@ -23,7 +23,7 @@ export default class AjaxApis extends Component {
           fetch(pokemonObj.url)
             .then((response) => response.json())
             .then((json) => {
-              console.log(json);
+              // console.log(json);
               const pokemon = {
                 id: json.id,
                 name: json.name,
