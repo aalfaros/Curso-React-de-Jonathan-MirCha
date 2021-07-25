@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 const Message = ({ msg, bgColor }) => {
   const styles = {
@@ -8,13 +8,14 @@ const Message = ({ msg, bgColor }) => {
     color: '#fff',
     fontWeight: 'bold',
     backgroundColor: bgColor,
-  };
+  }
 
   return (
     <div style={styles}>
-      <p>{msg}</p>
+      {/* <p>{msg}</p> */}
+      <p dangerouslySetInnerHTML={{ __html: msg }} />
     </div>
-  );
-};
+  )
+}
 
-export default Message;
+export default Message
